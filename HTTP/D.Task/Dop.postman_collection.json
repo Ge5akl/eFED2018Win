@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "c459baa2-03b2-4962-9bff-b978e79965d9",
+		"name": "Dop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://api.openweathermap.org/data/3.0/triggers?APPID=af5d4a5f5cb9d218cb146af76c0fa38c",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"time_period\":{\r\n      \"start\":{\r\n         \"expression\":\"after\",\r\n         \"amount\":132000000\r\n      },\r\n      \"end\":{\r\n         \"expression\":\"after\",\r\n         \"amount\":432000000\r\n      }\r\n   },\r\n   \"conditions\":[\r\n      {\r\n         \"name\":\"temp\",\r\n         \"expression\":\"$gt\",\r\n         \"amount\":5\r\n      }\r\n   ],\r\n   \"area\":[\r\n      {\r\n         \"type\":\"Point\",\r\n         \"coordinates\":[\r\n            53,\r\n            37\r\n         ]\r\n      }\r\n   ]\r\n}"
+				},
+				"url": {
+					"raw": "http://api.openweathermap.org/data/3.0/triggers?APPID=af5d4a5f5cb9d218cb146af76c0fa38c",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"3.0",
+						"triggers"
+					],
+					"query": [
+						{
+							"key": "APPID",
+							"value": "af5d4a5f5cb9d218cb146af76c0fa38c"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://api.openweathermap.org/data/3.0/triggers/5bfea54cceb88d001f39441c?appid=af5d4a5f5cb9d218cb146af76c0fa38c\n",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://api.openweathermap.org/data/3.0/triggers/5bfea54cceb88d001f39441c?appid=af5d4a5f5cb9d218cb146af76c0fa38c\n",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"3.0",
+						"triggers",
+						"5bfea54cceb88d001f39441c"
+					],
+					"query": [
+						{
+							"key": "appid",
+							"value": "af5d4a5f5cb9d218cb146af76c0fa38c\n"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
