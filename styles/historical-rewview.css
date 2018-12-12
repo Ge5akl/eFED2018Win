@@ -1,0 +1,21 @@
+.nav-info p{
+    padding-top: 10px;
+    margin: 4px;
+}
+.content-historycal table {
+    background-color: white;
+    color: black;
+}
+table {
+    border: 1px double black;
+    border-spacing: 24px 18px;
+    background-color: white;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+footer {
+    text-align: center;
+    margin-top: 200px;
+    background-color:  #505050; 
+}

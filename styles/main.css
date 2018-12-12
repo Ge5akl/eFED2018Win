@@ -1,0 +1,50 @@
+@import "5-day-weather.css";
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+.weather-info {
+    background-color: #505050;
+    color: white;
+}
+header {
+    background-color:  #353432;
+    color: white;
+    border-bottom: 1px solid #353432;
+}
+.search-block {
+    float: right; 
+   
+}
+.nav-info p {
+    display: inline-block;
+}
+
+.navigation {
+    background-color: #505050;
+}
+.navigation, .nav-bar {
+    padding: 5px;
+    margin: 4px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+button {
+    border-radius: 5px;
+    padding: 3px;
+}
+input {
+    border-radius: 5px;
+    padding: 1px;
+}
+.search-block{
+    margin: 11px 18px 0px 0;
+    border-radius: 5px;
+}
+.content {
+    background-color: #353432
+}
+.border-moon {
+    background-color: #505050
+}

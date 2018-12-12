@@ -1,0 +1,77 @@
+
+.info-block, .button-info {
+    float: right;
+    text-decoration: none;
+}
+.info-block h1 {
+    display: inline;
+}
+
+table {
+    padding: 1px;
+    margin: auto;
+
+}
+table, th {
+    border: 1px double black;
+    border-spacing: 20px 18px;
+    background-color: white;
+ 
+}
+.moon {
+    color: white;
+    
+}
+.center-p {
+    display: inline;
+}
+.left-p {
+    display: inline;
+}
+.border-moon {
+    text-align: center;
+    display: inline;
+}
+.text-left {
+    display: inline-block;
+}
+.border-moon {
+    color: white;
+}
+.left, .center {
+    display: inline-block;
+}
+.left {
+    padding-right: 430px; 
+    margin: 10px;
+}
+.center {
+    padding-right: 586px;
+}
+.nav-info p{
+    padding-top: 10px;
+    margin: 4px;
+}
+.sun-info.img , .sun-info p{
+    display: inline-block;
+}
+
+.sun-info  p.dline {
+    line-height: 10px;
+   }
+.moon-info{
+    float: right;
+    margin-right: 120px;
+}
+.sun-info {
+    margin-left: 120px;
+    padding-top: 20px; 
+
+}
+.information {
+    background-color: white;
+}
+footer{
+    color: white;
+    text-align: center;
+} 

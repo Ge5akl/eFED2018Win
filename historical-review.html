@@ -3,12 +3,104 @@
   <head>
     <meta charset="UTF-8">
     <title>Five-day weather forecast</title>
-  </head>
-  <body>
+    <meta name="auhtor" content="Borisov">
+    <meta name="keywords" content="Погода, погода 5 дней, ветер."> 
+    <meta charset="UTF-8">
+    <link href='styles/main.css' rel='stylesheet' type='text/css'>
+    <link href='styles/historical-rewview.css' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
     <header>
-      <button>Сегодня</button>
-      <button>5 Дней</button>
-    </header>
-    <h1>Историческая справка о погоде на текущий день</h1>
+      <nav class="nav-bar">
+        <button>Сегодня</button>
+        <button>5 дней</button>
+        <button>История погоды</button>
+      </nav>
+      <section class="navigation">
+      <span class="nav-info">
+        <p>Ижевск, Россия</p>
+      <span class="search-block">
+       <input class="search" pattern="^[А-Яа-яЁё\s]+$"> 
+       <input class="sumbit-button" type="submit" value="Отправить">
+      </span>
+    </section>
+    <section class="content-historycal">
+        <table>
+          <tr>
+            <th></th>
+            <th>Январь</th>
+            <th>Февраль</th>
+            <th>Март</th>
+            <th>Апрель</th>
+            <th>Май</th>
+            <th>Июнь</th>
+            <th>Июль</th>
+            <th>Август</th>
+            <th>Сентябрь</th>
+            <th>Октябрь</th>
+            <th>Декабрь</th>
+          </tr>
+          <tr>
+            <td>Средний</br>Максимум</td>
+            <td id="sr-max">5°</td>
+            <td id="sr-max">5°</td>
+            <td id="sr-max">5°</td>
+            <td id="sr-max">5°</td>
+            <td id="sr-max">5°</td>
+            <td id="sr-max">5°</td>
+            <td id="sr-max">5°</td>
+            <td id="sr-max">5°</td>
+            <td id="sr-max">5°</td>
+            <td id="sr-max">5°</td>
+            <td id="sr-max">5°</td> 
+          </tr>
+          <tr>
+              <td>Средний</br>Минимум</td>
+              <td id="sr-min">5°</td>
+              <td id="sr-min">5°</td>
+              <td id="sr-min">5°</td>
+              <td id="sr-min">5°</td>
+              <td id="sr-min">5°</td>
+              <td id="sr-min">5°</td>
+              <td id="sr-min">5°</td>
+              <td id="sr-min">5°</td>
+              <td id="sr-min">5°</td>
+              <td id="sr-min">5°</td>
+              <td id="sr-min">5°</td>  
+          </tr>
+          <tr>
+              <td>Рекордный</br>Максимум</td>
+              <td id="rec-max">5°</td>
+              <td id="rec-max">5°</td>
+              <td id="rec-max">5°</td>
+              <td id="rec-max">5°</td>
+              <td id="rec-max">5°</td>
+              <td id="rec-max">5°</td>
+              <td id="rec-max">5°</td>
+              <td id="rec-max">5°</td>
+              <td id="rec-max">5°</td>
+              <td id="rec-max">5°</td>
+              <td id="rec-max">5°</td>
+              </tr>
+              <tr>
+                  <td>Средний</br>Минимум</td>
+                  <td id="rec-min">5°</td>
+                  <td id="rec-min">5°</td>
+                  <td id="rec-min">5°</td>
+                  <td id="rec-min">5°</td>
+                  <td id="rec-min">5°</td>
+                  <td id="rec-min">5°</td>
+                  <td id="rec-min">5°</td>
+                  <td id="rec-min">5°</td>
+                  <td id="rec-min">5°</td>
+                  <td id="rec-min">5°</td>
+                  <td id="rec-min">5°</td>
+                 
+                  </tr>
+        </table>
+    </section>
+    <footer>
+      2018 Copyright
+    </footer>
   </body>
 </html>
