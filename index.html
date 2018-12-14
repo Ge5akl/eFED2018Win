@@ -3,14 +3,160 @@
   <head>
     <meta charset="UTF-8">
     <title>Five-day weather forecast</title>
-    <script type="text/javascript" src="mocks/FullWeatherDetailsMock.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+   <!---- <script type="text/javascript" src="mocks/FullWeatherDetailsMock.js"></script>
     <script type="text/javascript" src="mocks/HistoricalReviewMock.js"></script>
     <script type="text/javascript" src="mocks/WeekForecastMock.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/index.js"></script> --->
+  <meta name="auhtor" content="Borisov">
+  <meta name="keywords" content="Погода, погода 5 дней, ветер."> 
+  <meta charset="UTF-8">
+  <link href='styles/main.css' rel='stylesheet' type='text/css'>
+  <link href='styles/index.day.css' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <h1>Пятидневный прогноз погоды</h1>
-    <div id="mainInfo">
+   <header>
+      <nav class="nav-bar">
+        <button>Сегодня</button>
+        <button>5 дней</button>
+        <button>История погоды</button>
+      </nav>
+      <section class="navigation">
+      <span class="nav-info">
+        <p>Ижевск, Россия</p>
+      <span class="search-block">
+       <input class="search" pattern="^[А-Яа-яЁё\s]+$"> 
+       <input class="sumbit-button" type="submit" value="Отправить">
+      </span>
+  </section>
+  </header>
+  <section class="content">
+      <table >
+      <tr>
+        <th id ="data" colspan="4">ПТ, 18 мая</th>
+        <th id ="data" colspan="4">СБ, 19 мая</th>
+        <th id ="data" colspan="4">ВС, 20 мая</th>
+        <th id ="data" colspan="4">ПН, 21 мая</th>
+        <th id ="data" colspan="4">ВТ, 21 мая</th>
+      </tr>
+      <tr>
+        <td id="day-time">Ночь</td><td  id="day-time">Утро</td><td id="day-time">День</td><td id="day-time">Вечер</td>
+        <td id="day-time">Ночь</td><td id="day-time">Утро</td><td id="day-time">День</td><td id="day-time">Вечер</td>
+        <td id="day-time">Ночь</td><td id="day-time">Утро</td><td id="day-time">День</td><td id="day-time">Вечер</td>
+        <td id="day-time">Ночь</td><td id="day-time">Утро</td><td id="day-time">День</td><td id="day-time">Вечер</td>
+        <td id="day-time">Ночь</td><td id="day-time">Утро</td><td id="day-time">День</td><td id="day-time">Вечер</td>
+      </tr>
+      <tr>
+          <td id="weather-img"><img src="assets/Weather.png"></td><td id="weather-img"><img src="assets/Weather_2.png"></td><td id="weather-img"><img src="assets/Weather_3.png"></td><td id="weather-img"><img src="assets/Weather_4.png"></td>          <td id="weather-img"><img src="assets/Weather.png"></td><td id="weather-img"><img src="assets/Weather_2.png"></td><td id="weather-img"><img src="assets/Weather_3.png"></td><td id="weather-img"><img src="assets/Weather_4.png"></td>
+          <td id="weather-img"><img src="assets/Weather.png"></td><td id="weather-img"><img src="assets/Weather_2.png"></td><td id="weather-img"><img src="assets/Weather_3.png"></td><td id="weather-img"><img src="assets/Weather_4.png"></td>
+          <td id="weather-img"><img src="assets/Weather.png"></td><td id="weather-img"><img src="assets/Weather_2.png"></td><td id="weather-img"><img src="assets/Weather_3.png"></td><td id="weather-img"><img src="assets/Weather_4.png"></td>
+          <td id="weather-img"><img src="assets/Weather.png"></td><td id="weather-img"><img src="assets/Weather_2.png"></td><td id="weather-img"><img src="assets/Weather_3.png"></td><td id="weather-img"><img src="assets/Weather_4.png"></td>  
+      </tr>
+      <tr>
+          <td id="weather-temp"><border>+8</border></td>
+          <td id="weather-temp"><border>-1</border></td>
+          <td id="weather-temp"><border>+8</border></td>
+          <td id="weather-temp"><border>+8</border></td>
+          <td id="weather-temp"><border>+8</border></td>
+          <td id="weather-temp"><border>+8</border></td>
+          <td id="weather-temp"><border>+8</border></td>
+          <td id="weather-temp"><border>+8</border></td>
+          <td id="weather-temp"><border>+8</border></td>
+          <td id="weather-temp"><border>+8</border></td>
+          <td id="weather-temp"><border>+8</border></td>
+          <td id="weather-temp"><border>+8</border></td>
+          <td id="weather-temp"><border>+8</border></td>
+          <td id="weather-temp"><border>+8</border></td>
+          <td id="weather-temp"><border>+8</border></td>
+          <td id="weather-temp"><border>+8</border></td>
+          <td id="weather-temp"><border>+8</border></td>
+          <td id="weather-temp"><border>+8</border></td>
+          <td id="weather-temp"><border>+8</border></td>
+          <td id="weather-temp"><border>+8</border></td>
+      </tr>
+      <tr>
+        <th id = "speed-cloud" colspan="20">Максимальная скорость ветра</th>
+      </tr>
+      <tr>
+        <td id="speed-cloud"><border>2</border></td>
+        <td id="speed-cloud"><border>2</border></td>
+        <td id="speed-cloud"><border>2</border></td>
+        <td id="speed-cloud"><border>2</border></td>
+        <td id="speed-cloud"><border>2</border></td>
+        <td id="speed-cloud"><border>2</border></td>
+        <td id="speed-cloud"><border>2</border></td>
+        <td id="speed-cloud"><border>2</border></td>
+        <td id="speed-cloud"><border>2</border></td>
+        <td id="speed-cloud"><border>2</border></td>
+        <td id="speed-cloud"><border>2</border></td>
+        <td id="speed-cloud"><border>2</border></td>
+        <td id="speed-cloud"><border>2</border></td>
+        <td id="speed-cloud"><border>2</border></td>
+        <td id="speed-cloud"><border>2</border></td>
+        <td id="speed-cloud"><border>2</border></td>
+        <td id="speed-cloud"><border>2</border></td>
+        <td id="speed-cloud"><border>2</border></td>
+        <td id="speed-cloud"><border>2</border></td>
+        <td id="speed-cloud"><border>2</border></td>
+      </tr>
+      <tr>
+        <th id = "Precipitation" colspan="20">Осадки, мм</th>
+      </tr>
+      <tr>
+        <td id = "weather-Precipitation">0</td>
+        <td id = "weather-Precipitation">0</td>
+        <td id = "weather-Precipitation"><img src="assets/Group.png"></td>
+        <td id = "weather-Precipitation"><img src="assets/Group_2.png"></td>
+        <td id = "weather-Precipitation">0</td>
+        <td id = "weather-Precipitation">0</td>
+        <td id = "weather-Precipitation"><img src="assets/Group.png"></td>
+        <td id = "weather-Precipitation"><img src="assets/Group_2.png"></td>
+        <td id = "weather-Precipitation">0</td>
+        <td id = "weather-Precipitation">0</td>
+        <td id = "weather-Precipitation"><img src="assets/Group.png"></td>
+        <td id = "weather-Precipitation"><img src="assets/Group_2.png"></td>
+        <td id = "weather-Precipitation">0</td>
+        <td id = "weather-Precipitation">0</td>
+        <td id = "weather-Precipitation"><img src="assets/Group.png"></td>
+        <td id = "weather-Precipitation"><img src="assets/Group_2.png"></td>
+        <td id = "weather-Precipitation">0</td>
+        <td id = "weather-Precipitation">0</td>
+        <td id = "weather-Precipitation"><img src="assets/Group.png"></td>
+        <td id = "weather-Precipitation"><img src="assets/Group_2.png"></td>
+      </tr>
+      </table>
+      <span class="border-moon">
+        <border class="b-moon">
+      <p class="left">Пятница 18 мая, Сегодня</p>
+       <p class="center">Солнце и луна</p>
+      </border>
+      </span>
+    <section class="information">
+    <span class="sun-info">
+      <border class="b-info">
+          <img src="assets/Sun.png" class="sun-info.img">
+      <p>
+      Долгота дня - <span>16ч 3 мин</span></br>
+      Восход - <span> 4:02</span></br>
+      Заход - <span>20:45</span></br>
+      Сегодня день длинее на 2 минуты, чем вчера.
+      </p>
+      
+      <span class="moon-info">
+              <img src="assets/Moon.png" class="sun-info.img">
+          <p>
+          Долгота дня - <span>16ч 3 мин</span></br>
+          Восход - <span> 4:02</span></br>
+          Заход - <span>20:45</span></br>
+          Полнолуние - 28 июня, черезд 23 дня.
+          </p>
+        </span>
+    </border>
+    </span>
+  </section>
+  <footer>
+    2018 Copyright
+  </footer>
   </body>
   
 </html>

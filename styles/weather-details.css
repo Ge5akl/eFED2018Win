@@ -1,0 +1,41 @@
+.weather-block img, .weather-block img h1  {
+    display: inline-block;
+}
+.nav-info p{
+    padding-top: 10px;
+    margin: 4px;
+}
+.Sunny_Weathe {
+    margin: 7px 7px 7px 0;
+}
+.temp {
+    padding: 20px;
+    padding-top: 20px;
+}
+.content {
+    background-color: white;
+}
+.column {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 200%;
+    padding: 50px;
+    
+}
+.info-col {
+    padding-left: 470px;
+}
+table, th {
+    border-spacing: 20px 18px;
+ 
+}
+table {
+    margin: auto;
+    font-size: 100%;
+}
+footer {
+    background-color: #353432;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
