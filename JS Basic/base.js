@@ -10,13 +10,16 @@ function countChar (string, symb){
 
 console.log(countChar('My Random String', 'm'));
 //Задача 2
-function deepCompare ( a, b) {
-   if (a === b)
-       return true;
-
-    else return false;
-}
-console.log(deepCompare({ one: 1, two:'2'}, { one: 1, two:'2'}));
+function deepCompare (a, b) {
+    for (let key in a) {
+      if (!b.hasOwnProperty(key) || a[key] !== b[key]) {
+         return false;
+      }
+    }
+   
+   return true;
+ }
+ console.log(deepCompare({ one: 1, two: 2 }, { one: 1, two:'2'}));
 //Задача 3
 function chessBoard (h, w) {
     let height = h;
@@ -67,17 +70,23 @@ function reverseArrayInPlace(arr) {
 }
 console.log(reverseArray([1, 2, 3, 4]));
 //Задача 6
-function mergeArrays(...args){
-    var array = args.concat(...args);
-    array.forEach(fuction(...elems) {
-        var obj = {};
 
-        for (var i = 0; i < arr.length; i++) {
-            var str = args[i];
-            obj[str] = true;
+function UnionArrays(A,B)
+{
+    var M=A.length, N=B.length, i=0, j=0,
+        C=[], k=Math.min(A[0],B[0]), D=[k];
+ 
+    if (A[M-1]<=B[N-1]) {B[N]=B[N-1]; }
+    else                { B[N]=A[M-1]; }
+ 
+    for (var m=0; m<M+N; m++)
+        { if (A[i]<=B[j]) { C[m]=A[i]; i++; }
+          else            { C[m]=B[j]; j++; }
+ 
+          if (m>0 && C[m]!=k) { D[D.length]=C[m]; k=C[m]; }
         }
-
-        return Object.keys(obj);
-    });
+ 
+    return D;
 }
-console.log(mergeArrays([1, 2], [3, 4], [5, 6]));
+ console.log(UnionArrays([1,3],[-2,3], [1,4])); 
+
