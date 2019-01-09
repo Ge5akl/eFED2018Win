@@ -90,3 +90,78 @@ function UnionArrays(A,B)
 }
  console.log(UnionArrays([1,3],[-2,3], [1,4])); 
 
+// Задача 7 Every Some
+
+function every(arg, func) {
+    for(var i=0; i < arg; i++) {
+        if (!func(arg[i])) 
+        return false;
+    }
+    return true;
+}
+function some(arg, func) {
+    for(var i=0; i < arg; i++) {
+        if (func(arg[i])) 
+        return true;
+    }
+    return false;
+}
+
+onsole.log(every([1, 4, NaN, 6], Number.isNaN));
+console.log(every([NaN, NaN], Number.isNaN));
+console.log(some([1, 2, 6], Number.isNaN));
+console.log(some([1, 4, NaN, 6], Number.isNaN));
+
+// Задача 8 Повтор
+
+function multiplyOrThrow(a, b) {
+    if (Math.random() < 0.5) {
+        return a * b;
+    } else {
+        throw Error;
+    }
+}
+    function Error() {
+    console.log('error');
+}
+// Задача 9 
+
+function replaceQuotes(string) {
+    var text = string;
+    var result = text.replace((/(\b'\b)|'/g), (p0, p1) => p1 ? "'" : '"');
+}
+
+console.log(replaceQuotes(result(“I’m the ‘hero’”)))
+
+//Задача 10
+function findNumbers(array) {
+    var numbersArray = [];
+    for (var i = 0; i < array.length; i++) {
+        if (isNumber(array[i]))
+            numbersArray.push(array[i]);
+    }  return numbersArray;}
+    function isNumber(value) {
+    if (value == ".")
+        return false;
+    var regExp = /^[+-]?[0-9]*[.]?[0-9]*([eE][+-]?[0-9]*)?$/;
+    return !!regExp.exec(value);
+}
+
+//Задача 11
+function getNames (date){
+    var months = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь',
+        'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь'];
+    var weekDays = ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'];
+    var day = date.getDay();
+    var month = date.getMonth();
+    alert(months[month] + ',' + weekDays[day]);
+}
+console.log(getNames(new Date()));
+
+//Задача 12
+function getDifferenceInYears(startDate, finishDate) {
+
+    var differenceInDays = (finishDate - startDate) / (24  3600  1000);
+    var differenceInYears = Math.round((10 * differenceInDays) / 365) / 10;
+    return differenceInYears;
+}
