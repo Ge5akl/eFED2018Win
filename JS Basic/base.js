@@ -116,14 +116,20 @@ console.log(some([1, 4, NaN, 6], Number.isNaN));
 
 function multiplyOrThrow(a, b) {
     if (Math.random() < 0.5) {
-        return a * b;
+      return a * b;
     } else {
-        throw Error;
+      throw "MultiplicatorUnitFailure";
     }
-}
-    function Error() {
-    console.log('error');
-}
+  }
+  function makeAnotherTry(a, b) {
+    try {
+      return multiplyOrThrow(a, b);
+    } catch (e) {
+      console.log("Ошибка!");
+      return makeAnotherTry(a, b);
+    }
+  }
+  
 // Задача 9 
 
 function replaceQuotes(string) {
