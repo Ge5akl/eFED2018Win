@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav {
+    font-size: 0px;
+}
+nav a {
+    font-size: 20px;
+    border-left: 0px solid #333;
+    border-right: 0px solid #333;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    
+}
+nav a:hover {
+    box-shadow: 0 0 4px black;
+    color: black;
+}
+.navigation {
+    padding-left: 60px; 
+    border: 0px solid #333;
+    
+}
+.information_navigtion {
+    font-size: 19px;
+    padding-left: 60px; 
+    border: 0px solid #333;
+    box-shadow: 0 0 1px black;
+
+}
+.information_navigtion li {
+    display: inline-block;
+    padding: 10px 1px;
+    
+}
+.header-menu {
+    border-bottom: 1px solid black;
+    text-align: center;
+}
