@@ -1,0 +1,31 @@
+#icon_info_weather {
+    vertical-align: middle;
+}
+.weather-menu {
+    
+    width: 632px;
+    height: 171px;
+    display: block;
+    margin-top: 90px; 
+    margin-left: 418px;
+    border: 1px solid black;
+    
+}
+.block {
+    float: left; 
+    line-height: 50px;
+    font-size: 25px;
+    width: 150px; 
+    margin-right: 10px;
+    text-align: center; 
+    
+}
+.weather-menu :last-child {
+    margin-right: 0px;
+}
+#ome_section .temp {
+    margin-top: 6px; 
+}
+#one, #two {
+    display: none;
+}

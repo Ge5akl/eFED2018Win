@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Погода.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style/5-day-weather.css" />
+    <script src="scripts/main.js"></script>
+   
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navigation">
+                <a href="#">Сегодня</a>
+                <a href="#">5 дней</a>
+                <a href="#">История погоды</a>
+            </div>
+            <div class="information_navigtion">
+                <ul>
+                    <li id="icon_info_weather"><img src="assets/Cloudy Weather.png"></li>
+                    <li id="temp_info_weather">34°</li> 
+                    <li id="region_info_weather">Ижевск</li>
+                    <li id="country_info_weather">Россия</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="weather-menu">
+      
+            
+            <div class="slider">
+            <div class="header-menu">
+               <p>Пн, 18 Май</p>
+            </div> 
+                <div class="item">
+                    <div id="ome_section" class="block">Ночь
+            </br><img class="img" src="assets/Cloudy Weather.png">
+                        <div class="temp">+10°</div>
+                    </div>
+                <div id="two_section" class="block">Утро
+                    </br><img class="img" src="assets/Weather_2.png">
+                <div class="temp">+5°</div>
+                </div>
+            <div id="three_section" class="block">День
+                </br><img class="img" src="assets/Weather_2.png">
+                <div class="temp">+8°</div>
+            </div>  
+            <div id="four_section" class="block">Вечер
+                </br><img class="img" src="assets/Weather_2.png">
+                <div class="temp">+14°</div>
+            </div>
+                </div>
+            <div class="item" id="one">
+                    <div class="header-menu" id ="one">
+                        <p>Вт, 18 Май</p>
+                    </div> 
+                <div id="ome_section" class="block">Ночь
+                </br><img class="img" src="assets/Cloudy Weather.png">
+            <div class="temp">+1321°</div>
+                </div>
+            <div id="two_section" class="block">Утро
+                </br><img class="img" src="assets/Weather_2.png">
+                <div class="temp">+21315°</div>
+            </div>
+            <div id="three_section" class="block">День
+                </br><img class="img" src="assets/Weather_2.png">
+                <div class="temp">+8213123°</div>
+            </div>  
+                <div id="four_section" class="block">Вечер
+                </br><img class="img" src="assets/Weather_2.png">
+                <div class="temp">+14213123°</div>
+            </div>
+            </div>
+            <div class="item" id="two">
+                    <div class="header-menu" id="two">
+                            <p>Ср, 18 Май</p>
+                        </div> 
+                <div id="ome_section" class="block">Ночь
+                    </br><img class="img" src="assets/Cloudy Weather.png">
+                    <div class="temp">+21312°</div>
+                </div>
+            <div id="two_section" class="block">Утро
+                </br><img class="img" src="assets/Weather_2.png">
+                <div class="temp">-213123°</div>
+            </div>
+            <div id="three_section" class="block">День
+                </br><img class="img" src="assets/Weather_2.png">
+                <div class="temp">+2138213123°</div>
+            </div>  
+                <div id="four_section" class="block">Вечер
+                </br><img class="img" src="assets/Weather_2.png">
+            <div class="temp">+1°</div>
+            </div>
+            </div>
+            </div>
+            <div class="slider-dots">
+                    <span class="slider-dots_item" onclick="currentSlide(1)">Понедельник</span> 
+                    <span class="slider-dots_item" onclick="currentSlide(2)">Вторник</span> 
+                    <span class="slider-dots_item" onclick="currentSlide(3)">Среда</span> 
+                </div>
+        </div>
+        <a class="prev" onclick="minusSlide()">&#10094;</a>
+        <a class="next" onclick="plusSlide()">&#10095;</a>       
+    </section>
+</body>
+</html>
