@@ -22,21 +22,54 @@ nav a:hover {
 .navigation {
     padding-left: 60px; 
     border: 0px solid #333;
+    background-color: aliceblue;
     
 }
 .information_navigtion {
     font-size: 19px;
     padding-left: 60px; 
     border: 0px solid #333;
-    box-shadow: 0 0 1px black;
+    background-color: azure;
 
 }
 .information_navigtion li {
     display: inline-block;
     padding: 10px 1px;
+
     
 }
 .header-menu {
     border-bottom: 1px solid black;
     text-align: center;
 }
+body {
+    background-color: azure;
+}
+nav {
+    box-shadow: 0 0 2px black;
+}
+.slider-dots_item {
+    background-color: #f0f8ff;
+    display: inline-block;
+}
+
+#search-field {
+    height:50px;
+    background-color:#f2f2f2;
+    border: 1px solid #979797;
+    clear: both;
+        float:right;
+        margin:10px;
+        height:25px;
+        width: 200px;
+        padding:3px;
+        background-color:aliceblue;
+        border-radius:5px;
+        border:1px solid #bdbdbd;
+        display: block;
+        margin-top: -40px;
+    }
+    
+
+
+  

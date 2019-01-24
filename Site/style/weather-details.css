@@ -1,0 +1,18 @@
+.column {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 200%;
+    padding: 50px;
+    
+}
+.info-col {
+    padding-left: 470px;
+}
+table, th {
+    border-spacing: 20px 18px;
+ 
+}
+table {
+    margin: auto;
+    font-size: 100%;
+}

@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "6980ad75-eb2e-4b78-801c-e3e7a152918c",
+		"name": "Air Polution",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://api.openweathermap.org/pollution/v1/co/56,53/2018-11-23Z.json?appid=af5d4a5f5cb9d218cb146af76c0fa38c\n",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://api.openweathermap.org/pollution/v1/co/56,53/2018-11-23Z.json?appid=af5d4a5f5cb9d218cb146af76c0fa38c\n",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"pollution",
+						"v1",
+						"co",
+						"56,53",
+						"2018-11-23Z.json"
+					],
+					"query": [
+						{
+							"key": "appid",
+							"value": "af5d4a5f5cb9d218cb146af76c0fa38c\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://api.openweathermap.org/pollution/v1/co/48,2/current.json?appid=af5d4a5f5cb9d218cb146af76c0fa38c\n",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://api.openweathermap.org/pollution/v1/co/48,2/current.json?appid=af5d4a5f5cb9d218cb146af76c0fa38c\n",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"pollution",
+						"v1",
+						"co",
+						"48,2",
+						"current.json"
+					],
+					"query": [
+						{
+							"key": "appid",
+							"value": "af5d4a5f5cb9d218cb146af76c0fa38c\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://api.openweathermap.org/pollution/v1/co/38,77/current.json?appid=af5d4a5f5cb9d218cb146af76c0fa38c\n",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://api.openweathermap.org/pollution/v1/co/38,77/current.json?appid=af5d4a5f5cb9d218cb146af76c0fa38c\n",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"pollution",
+						"v1",
+						"co",
+						"38,77",
+						"current.json"
+					],
+					"query": [
+						{
+							"key": "appid",
+							"value": "af5d4a5f5cb9d218cb146af76c0fa38c\n"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

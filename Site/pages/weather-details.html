@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Погода.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/5-day-weather.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/weather-details.css" />
+
+   
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navigation">
+                <a href="#">Сегодня</a>
+                <a href="../index.html">5 дней</a>
+                <a href="#">История погоды</a>
+            </div>
+            <div class="information_navigtion">
+                <ul>
+                    <li id="icon_info_weather"> <img class="weatherIconImg" id="currWeatherImg" src="" alt="weather_icon"></li>
+                    <li><p class="weatherIconNumber" id="temp_info_weather">&nbsp;</p></li> 
+                    <li><p class="City" id="region_info_weather">&nbsp;</p></li>
+                    <li><p id="rendWeatherStatus">&nbsp;</p></li></br>
+                    <span>Загрязнение воздуха: <span id="polutionInfo"></span></span>
+                </ul>
+                <form class="mainsearch" action="#" method="GET">
+                        <input type="search" id="search-field" placeholder="Поиск" pattern="[А-ЯA-Z][а-яa-z]+(?:[\s-][а-яА-Яa-zA-Z]+)*$"
+                            title="Название города должно начинаться c большой буквы и не содержать цифр">
+                        <button type="button"></button>
+                        </form>
+            </div>
+        </nav>
+    </header>
+    <section id="column-container">
+            <section class="column">
+                <p id="local">&nbsp;</p>
+                <p id="day">&nbsp;</p>
+                <p id="weather">&nbsp;</p>
+                <img class="weatherIconImg" id="currWeatherImg2" src="" alt="weather_icon">
+                <p id="temp">&nbsp;</p>
+            </section>
+            <section class="column info-col">
+                <p id="precip-prob">Вероятность осадков: 20%</p>
+                <p id="humidity">Влажность: 45%</p>
+                <p id="windspeed">Ветер: 11 км/ч</p>
+                <section class="borderless">
+                    <button>Температура</button>
+                    <button>Вероятность осадков</button>
+                    <button>Ветер</button>
+                </section>
+            </section>
+        </section> 
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/5-day-weather.js"></script>
+    </body>
+    </html>
