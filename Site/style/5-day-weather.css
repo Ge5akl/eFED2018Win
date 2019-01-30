@@ -1,0 +1,89 @@
+#icon_info_weather {
+    vertical-align: middle;
+}
+.weather-menu {
+    
+    width: 632px;
+    height: 171px;
+    display: block;
+    margin-right: auto; 
+    margin-left: auto;
+    margin-top: 15px;
+    border: 1px solid black;
+    
+}
+.block {
+    float: left; 
+    line-height: 50px;
+    font-size: 25px;
+    width: 150px; 
+    margin-right: 10px;
+    text-align: center; 
+    
+}
+.weather-menu :last-child {
+    margin-right: 0px;
+}
+#ome_section .temp {
+    margin-top: 5px; 
+}
+#one, #two, #two, #three, #four {
+    display: none;
+}
+.slider-dots_item {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+}
+.slider-dots_item:hover {
+    box-shadow: 0 0 4px black;
+    color: black;
+}
+.slider-dots_item a {
+    text-decoration: none;
+    color: black;
+}
+.header-menu {
+    background-color: aliceblue;
+}
+
+table {
+    padding: 1px;
+    margin-right: auto; 
+    margin-left: auto;
+    margin-top: 60px;
+    background-color: azure;
+
+}
+table, th {
+    border: 1px double black;
+    border-spacing: 20px 18px;
+    
+}
+th {
+    background-color: aliceblue;
+}
+#temp {
+   
+    margin-top:2px; 
+}
+.weatherIconImg {
+
+    width: 50px;
+}
+
+.img-moon {
+    margin-left: 50%;
+} 
+.sun, .moon{
+    display: inline-block;
+    padding-left: 20px;
+    margin-left: 341px;
+}
+.sun_and_moon h1 {
+    text-align: center;
+}
+footer {
+    text-align: center;
+    background-color: aliceblue;
+}

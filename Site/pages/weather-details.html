@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Погода.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/5-day-weather.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/weather-details.css" />
+
+   
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navigation">
+                <a href="#">Сегодня</a>
+                <a href="../index.html">5 дней</a>
+                <a href="#">История погоды</a>
+            </div>
+            <div class="information_navigtion">
+                <ul>
+                    <li id="icon_info_weather"> <img class="weatherIconImg" id="currWeatherImg" src="" alt="weather_icon"></li>
+                    <li><p class="weatherIconNumber" id="temp_info_weather">&nbsp;</p></li> 
+                    <li><p class="City" id="region_info_weather">&nbsp;</p></li>
+                    <li><p id="rendWeatherStatus">&nbsp;</p></li></br>
+                    <span>Загрязнение воздуха: <span id="polutionInfo"></span></span>
+                </ul>
+                <form class="mainsearch" action="#" method="GET">
+                        <input type="search" id="search-field" placeholder="Поиск" pattern="[А-ЯA-Z][а-яa-z]+(?:[\s-][а-яА-Яa-zA-Z]+)*$"
+                            title="Название города должно начинаться c большой буквы и не содержать цифр">
+                        <button type="button"></button>
+                        </form>
+            </div>
+        </nav>
+    </header>
+    <section id="column-container">
+            <section class="column">
+                <p id="local">&nbsp;</p>
+                <p id="day">&nbsp;</p>
+                <p id="weather">&nbsp;</p>
+                <p id="temp">&nbsp;</p>
+                <img class="weatherIconImg" id="currWeatherImg2" src="" alt="weather_icon">
+            </section>
+            <section class="column info-col">
+                <p id="precipitation">Вероятность осадков: </p>
+                <p id="humidity">Влажность: </p>
+                <p id="windspeed">Ветер: </p>
+                <section class="borderless">
+                    <a href="#">Температура</a>
+                    <a href="#">Вероятность осадков</a>
+                    <a >Ветер</a>
+                </section>
+            </section>
+        </section> 
+        <section class="table-weather">
+            <table>
+              <tr>
+                <td id = "time">17:00</td>
+                <td id = "time">20:00</td>
+                <td id = "time">23:00</td>
+                <td id = "time">2:00</td>
+                <td id = "time">5:00</td>
+                <td id = "time">8:00</td>
+                <td id = "time">11:00</td>
+              </tr>
+              <tr>
+                  <td id = "day-s">ср</td>
+                  <td id = "day-c">чт</td>
+                  <td id = "day-pt">пт</td>
+                  <td id = "day-sb">сб</td>
+                  <td id = "day-vs">вс</td>
+                  <td id = "day-pn">пн</td>
+                  <td id = "day-vt">вт</td>
+              </tr>
+              <tr>
+                 <td id ="weather-img"><img src="assets/Weather.png"></td>
+                 <td id ="weather-img"><img src="assets/Weather.png"></td>
+                 <td id ="weather-img"><img src="assets/Weather.png"></td>
+                 <td id ="weather-img"><img src="assets/Weather.png"></td>
+                 <td id ="weather-img"><img src="assets/Weather.png"></td>
+                 <td id ="weather-img"><img src="assets/Weather.png"></td>
+                 <td id ="weather-img"><img src="assets/Weather.png"></td>
+              </tr>
+              <tr>
+                  <td><span id = "temp-day">5°</span><span id ="temp-night">5°</span></td>
+                  <td><span id = "temp-day">5°</span><span id ="temp-night">5°</span></td>
+                  <td><span id = "temp-day">5°</span><span id ="temp-night">5°</span></td>
+                  <td><span id = "temp-day">5°</span><span id ="temp-night">5°</span></td>
+                  <td><span id = "temp-day">5°</span><span id ="temp-night">5°</span></td>
+                  <td><span id = "temp-day">5°</span><span id ="temp-night">5°</span></td>
+                  <td><span id = "temp-day">5°</span><span id ="temp-night">5°</span></td>
+              </tr>
+              </table>
+          </section>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/5-day-weather.js"></script>
+    </body>
+    </html>

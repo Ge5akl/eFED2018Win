@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "c5217d75-be08-46c0-82fb-40f67885f5c0",
+		"name": "eFED2018Win/HTTP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api.openweathermap.org/data/2.5/forecast?q=Izhevsk,udm&mode=xml &APPID=af5d4a5f5cb9d218cb146af76c0fa38c",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/forecast?q=Izhevsk,udm&mode=xml&APPID=af5d4a5f5cb9d218cb146af76c0fa38c",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Izhevsk,udm"
+						},
+						{
+							"key": "mode",
+							"value": "xml"
+						},
+						{
+							"key": "APPID",
+							"value": "af5d4a5f5cb9d218cb146af76c0fa38c"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET api.openweathermap.org/data/2.5/forecast?q=Paris,us&mode=xml &APPID=af5d4a5f5cb9d218cb146af76c0fa38c Send Save Params Authorization Headers Body Pre-request Script Tests Cookies Code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/forecast?q=Paris,fr&mode=xml&APPID=af5d4a5f5cb9d218cb146af76c0fa38c",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Paris,fr"
+						},
+						{
+							"key": "mode",
+							"value": "xml"
+						},
+						{
+							"key": "APPID",
+							"value": "af5d4a5f5cb9d218cb146af76c0fa38c"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api.openweathermap.org/data/2.5/forecast?q=Washington,us&mode=xml&APPID=af5d4a5f5cb9d218cb146af76c0fa38c",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/forecast?q=Washington,us&mode=xml&APPID=af5d4a5f5cb9d218cb146af76c0fa38c",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Washington,us"
+						},
+						{
+							"key": "mode",
+							"value": "xml"
+						},
+						{
+							"key": "APPID",
+							"value": "af5d4a5f5cb9d218cb146af76c0fa38c"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

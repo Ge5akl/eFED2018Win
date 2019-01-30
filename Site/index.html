@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Погода.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style/5-day-weather.css" />
+
+   
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navigation">
+                <a href="pages/weather-details.html">Сегодня</a>
+                <a href="#">5 дней</a>
+                <a href="#">История погоды</a>
+            </div>
+            <div class="information_navigtion">
+                <ul>
+                        <li id="icon_info_weather"> <img class="weatherIconImg" id="currWeatherImg" src="" alt="weather_icon"></li>
+                    <li><p class="weatherIconNumber" id="temp_info_weather">&nbsp;</p></li> 
+                    <li><p class="City" id="region_info_weather">&nbsp;</p></li>
+                </ul>
+                <form class="mainsearch" action="#" method="GET">
+                        <input type="search" id="search-field" placeholder="Поиск" pattern="[А-ЯA-Z][а-яa-z]+(?:[\s-][а-яА-Яa-zA-Z]+)*$"
+                            title="Название города должно начинаться c большой буквы и не содержать цифр">
+                        <button type="button"></button>
+                        </form>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="weather-menu">
+            <div class="slider">
+            <div class="header-menu">
+               <p><a class="prev" onclick="minusSlide()">&#10094;</a> Пн, 18 Май <a class="next" onclick="plusSlide()">&#10095;</a>       </p>
+            </div> 
+                <div class="item">
+                    <div id="ome_section" class="block">Ночь
+            </br><img class="img" src="assets/Cloudy Weather.png">
+                        <div class="temp">+10°</div>
+                    </div>
+                <div id="two_section" class="block">Утро
+                    </br><img class="img" src="assets/Weather_2.png">
+                <div class="temp">+5°</div>
+                </div>
+            <div id="three_section" class="block">День
+                </br><img class="img" src="assets/Weather_2.png">
+                <div class="temp">+8°</div>
+            </div>  
+            <div id="four_section" class="block">Вечер
+                </br><img class="img" src="assets/Weather_2.png">
+                <div class="temp">+14°</div>
+            </div>
+                </div>
+            <div class="item" id="one">
+                    <div class="header-menu" id ="one">
+                        <p>Вт, 18 Май</p>
+                    </div> 
+                <div id="ome_section" class="block">Ночь
+                </br><img class="img" src="assets/Cloudy Weather.png">
+            <div class="temp">+1321°</div>
+                </div>
+            <div id="two_section" class="block">Утро
+                </br><img class="img" src="assets/Weather_2.png">
+                <div class="temp">+21315°</div>
+            </div>
+            <div id="three_section" class="block">День
+                </br><img class="img" src="assets/Weather_2.png">
+                <div class="temp">+8213123°</div>
+            </div>  
+                <div id="four_section" class="block">Вечер
+                </br><img class="img" src="assets/Weather_2.png">
+                <div class="temp">+14213123°</div>
+            </div>
+            </div>
+            <div class="item" id="two">
+                    <div class="header-menu" id="two">
+                            <p>Ср, 18 Май</p>
+                        </div> 
+                <div id="ome_section" class="block">Ночь
+                    </br><img class="img" src="assets/Cloudy Weather.png">
+                    <div class="temp">+21312°</div>
+                </div>
+            <div id="two_section" class="block">Утро
+                </br><img class="img" src="assets/Weather_2.png">
+                <div class="temp">-213123°</div>
+            </div>
+            <div id="three_section" class="block">День
+                </br><img class="img" src="assets/Weather_2.png">
+                <div class="temp">+2138213123°</div>
+            </div>  
+                <div id="four_section" class="block">Вечер
+                </br><img class="img" src="assets/Weather_2.png">
+            <div class="temp">+1°</div>
+            </div>
+            </div>
+            <div class="item" id="three">
+                    <div id="ome_section" class="block">Ночь
+            </br><img class="img" src="assets/Cloudy Weather.png">
+                        <div class="temp">+10°</div>
+                    </div>
+                <div id="two_section" class="block">Утро
+                    </br><img class="img" src="assets/Weather_2.png">
+                <div class="temp">+5°</div>
+                </div>
+            <div id="three_section" class="block">День
+                </br><img class="img" src="assets/Weather_2.png">
+                <div class="temp">+8°</div>
+            </div>  
+            <div id="four_section" class="block">Вечер
+                </br><img class="img" src="assets/Weather_2.png">
+                <div class="temp">+14°</div>
+            </div>
+                </div>
+                <div class="item" id="four">
+                        <div class="header-menu" id="two">
+                                <p>Ср, 18 Май</p>
+                            </div> 
+                    <div id="ome_section" class="block">Ночь
+                        </br><img class="img" src="assets/Cloudy Weather.png">
+                        <div class="temp">+21312°</div>
+                    </div>
+                <div id="two_section" class="block">Утро
+                    </br><img class="img" src="assets/Weather_2.png">
+                    <div class="temp">-213123°</div>
+                </div>
+                <div id="three_section" class="block">День
+                    </br><img class="img" src="assets/Weather_2.png">
+                    <div class="temp">+2138213123°</div>
+                </div>  
+                    <div id="four_section" class="block">Вечер
+                    </br><img class="img" src="assets/Weather_2.png">
+                <div class="temp">+1°</div>
+                </div>
+                </div>
+            <div class="slider-dots">
+                    <span class="slider-dots_item" onclick="currentSlide(1)"><a href="#">Понедельник</a></span> 
+                    <span class="slider-dots_item" onclick="currentSlide(2)"><a href="#">Вторник</a></span> 
+                    <span class="slider-dots_item" onclick="currentSlide(3)"><a href="#">Среда</a></span> 
+                    <span class="slider-dots_item" onclick="currentSlide(4)"><a href="#">Четврег</a></span> 
+                    <span class="slider-dots_item" onclick="currentSlide(5)"><a href="#">Пятница</a></span> 
+                </div>
+            </div>
+        </div>
+    <table>
+    <tr>
+        <th id = "speed-cloud" colspan="20">Максимальная скорость ветра</th>
+    </tr>
+    <tr>
+      <td id="speed-cloud"><border>2</border></td>
+      <td id="speed-cloud"><border>2</border></td>
+      <td id="speed-cloud"><border>2</border></td>
+      <td id="speed-cloud"><border>2</border></td>
+      <td id="speed-cloud"><border>2</border></td>
+      <td id="speed-cloud"><border>2</border></td>
+      <td id="speed-cloud"><border>2</border></td>
+      <td id="speed-cloud"><border>2</border></td>
+      <td id="speed-cloud"><border>2</border></td>
+      <td id="speed-cloud"><border>2</border></td>
+      <td id="speed-cloud"><border>2</border></td>
+      <td id="speed-cloud"><border>2</border></td>
+      <td id="speed-cloud"><border>2</border></td>
+      <td id="speed-cloud"><border>2</border></td>
+      <td id="speed-cloud"><border>2</border></td>
+      <td id="speed-cloud"><border>2</border></td>
+      <td id="speed-cloud"><border>2</border></td>
+      <td id="speed-cloud"><border>2</border></td>
+      <td id="speed-cloud"><border>2</border></td>
+      <td id="speed-cloud"><border>2</border></td>
+    </tr>
+    <tr>
+      <th id = "Precipitation" colspan="20">Осадки, мм</th>
+    </tr>
+    <tr>
+      <td id = "weather-Precipitation">0</td>
+      <td id = "weather-Precipitation">0</td>
+      <td id = "weather-Precipitation"><img src="assets/Group.png"></td>
+      <td id = "weather-Precipitation"><img src="assets/Group_2.png"></td>
+      <td id = "weather-Precipitation">0</td>
+      <td id = "weather-Precipitation">0</td>
+      <td id = "weather-Precipitation"><img src="assets/Group.png"></td>
+      <td id = "weather-Precipitation"><img src="assets/Group_2.png"></td>
+      <td id = "weather-Precipitation">0</td>
+      <td id = "weather-Precipitation">0</td>
+      <td id = "weather-Precipitation"><img src="assets/Group.png"></td>
+      <td id = "weather-Precipitation"><img src="assets/Group_2.png"></td>
+      <td id = "weather-Precipitation">0</td>
+      <td id = "weather-Precipitation">0</td>
+      <td id = "weather-Precipitation"><img src="assets/Group.png"></td>
+      <td id = "weather-Precipitation"><img src="assets/Group_2.png"></td>
+      <td id = "weather-Precipitation">0</td>
+      <td id = "weather-Precipitation">0</td>
+      <td id = "weather-Precipitation"><img src="assets/Group.png"></td>
+      <td id = "weather-Precipitation"><img src="assets/Group_2.png"></td>
+    </tr>
+</table>
+    </section>
+    <section class="sun_and_moon">
+        <div class="info_block">
+        <h1>Солнце и луна</h1>
+        <div class="sun">
+        <div class="img-sun"><img src="assets/Sun.png" class="sun-info.img"></div>
+        <div class="sun-text">
+        <div class="lenght-day">Долгота дня - &mdash; </div>
+        <div class="sunrise">Восход - &mdash; </div>
+        <div class="sunset">Заход - &mdash; </div>
+        <div>Сегодня ден длинее</div>
+        </div>
+        </div>
+        <div class="moon">
+        <div class="moon-sun"><img src="assets/Moon.png" class="moon-info.img"></div>
+        <div class="sun-text">
+        <div class="lenght-day">Долгота дня - &mdash; </div>
+        <div class="sunrise">Восход - &mdash; </div>
+        <div class="sunset">Заход - &mdash; </div>
+        <div>Сегодня ден длинее</div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        2018#
+    </footer>
+    
+    <script src="scripts/main.js"></script>
+    <script src="scripts/5-day-weather.js"></script>
+
+</body>
+</html>
