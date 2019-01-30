@@ -63,3 +63,27 @@ table, th {
 th {
     background-color: aliceblue;
 }
+#temp {
+   
+    margin-top:2px; 
+}
+.weatherIconImg {
+
+    width: 50px;
+}
+
+.img-moon {
+    margin-left: 50%;
+} 
+.sun, .moon{
+    display: inline-block;
+    padding-left: 20px;
+    margin-left: 341px;
+}
+.sun_and_moon h1 {
+    text-align: center;
+}
+footer {
+    text-align: center;
+    background-color: aliceblue;
+}

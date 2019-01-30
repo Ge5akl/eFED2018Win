@@ -5,7 +5,7 @@
 nav {
     font-size: 0px;
 }
-nav a {
+nav a, #column-container a {
     font-size: 20px;
     border-left: 0px solid #333;
     border-right: 0px solid #333;
@@ -15,7 +15,8 @@ nav a {
     color: black;
     
 }
-nav a:hover {
+
+nav a:hover, #column-container a:hover {
     box-shadow: 0 0 4px black;
     color: black;
 }

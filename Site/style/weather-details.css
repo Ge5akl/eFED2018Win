@@ -10,9 +10,14 @@
 }
 table, th {
     border-spacing: 20px 18px;
+    padding: 10px;
  
 }
 table {
     margin: auto;
     font-size: 100%;
 }
+footer {
+    text-align: center;
+}
+

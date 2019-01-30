@@ -40,20 +40,60 @@
                 <p id="local">&nbsp;</p>
                 <p id="day">&nbsp;</p>
                 <p id="weather">&nbsp;</p>
-                <img class="weatherIconImg" id="currWeatherImg2" src="" alt="weather_icon">
                 <p id="temp">&nbsp;</p>
+                <img class="weatherIconImg" id="currWeatherImg2" src="" alt="weather_icon">
             </section>
             <section class="column info-col">
-                <p id="precip-prob">Вероятность осадков: 20%</p>
-                <p id="humidity">Влажность: 45%</p>
-                <p id="windspeed">Ветер: 11 км/ч</p>
+                <p id="precipitation">Вероятность осадков: </p>
+                <p id="humidity">Влажность: </p>
+                <p id="windspeed">Ветер: </p>
                 <section class="borderless">
-                    <button>Температура</button>
-                    <button>Вероятность осадков</button>
-                    <button>Ветер</button>
+                    <a href="#">Температура</a>
+                    <a href="#">Вероятность осадков</a>
+                    <a >Ветер</a>
                 </section>
             </section>
         </section> 
+        <section class="table-weather">
+            <table>
+              <tr>
+                <td id = "time">17:00</td>
+                <td id = "time">20:00</td>
+                <td id = "time">23:00</td>
+                <td id = "time">2:00</td>
+                <td id = "time">5:00</td>
+                <td id = "time">8:00</td>
+                <td id = "time">11:00</td>
+              </tr>
+              <tr>
+                  <td id = "day-s">ср</td>
+                  <td id = "day-c">чт</td>
+                  <td id = "day-pt">пт</td>
+                  <td id = "day-sb">сб</td>
+                  <td id = "day-vs">вс</td>
+                  <td id = "day-pn">пн</td>
+                  <td id = "day-vt">вт</td>
+              </tr>
+              <tr>
+                 <td id ="weather-img"><img src="assets/Weather.png"></td>
+                 <td id ="weather-img"><img src="assets/Weather.png"></td>
+                 <td id ="weather-img"><img src="assets/Weather.png"></td>
+                 <td id ="weather-img"><img src="assets/Weather.png"></td>
+                 <td id ="weather-img"><img src="assets/Weather.png"></td>
+                 <td id ="weather-img"><img src="assets/Weather.png"></td>
+                 <td id ="weather-img"><img src="assets/Weather.png"></td>
+              </tr>
+              <tr>
+                  <td><span id = "temp-day">5°</span><span id ="temp-night">5°</span></td>
+                  <td><span id = "temp-day">5°</span><span id ="temp-night">5°</span></td>
+                  <td><span id = "temp-day">5°</span><span id ="temp-night">5°</span></td>
+                  <td><span id = "temp-day">5°</span><span id ="temp-night">5°</span></td>
+                  <td><span id = "temp-day">5°</span><span id ="temp-night">5°</span></td>
+                  <td><span id = "temp-day">5°</span><span id ="temp-night">5°</span></td>
+                  <td><span id = "temp-day">5°</span><span id ="temp-night">5°</span></td>
+              </tr>
+              </table>
+          </section>
     <script src="../scripts/main.js"></script>
     <script src="../scripts/5-day-weather.js"></script>
     </body>
